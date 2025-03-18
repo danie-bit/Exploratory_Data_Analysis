@@ -57,7 +57,7 @@ select count(*) from (
 
 
 -- Objective 3 : Analyze customer behavior 
- -- I created a separate view with the below select query
+ -- I created a separate view(joined_table) with the below select query
  select count(*) from order_details o left join menu_items m on m.menu_item_id = o.item_id;
  
 -- a)what are the least and most ordered items ? what category were they in ?
